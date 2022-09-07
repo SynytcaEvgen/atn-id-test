@@ -4,7 +4,7 @@ function signForm() {
   const fullname = document.getElementById('fullname').value;
   const password = document.getElementById('password').value;
 
-  fetch('http://localhost:3001/signup', {
+  fetch('https://ath-auth-id.herokuapp.com/signup', {
     method: 'POST',
     body: JSON.stringify({
       fullname,
@@ -33,7 +33,7 @@ function codeForm() {
   const form = document.getElementById('form');
   const code = document.getElementById('code').value;
 
-  fetch('http://localhost:3001/verify', {
+  fetch('https://ath-auth-id.herokuapp.com/verify', {
     method: 'POST',
     body: JSON.stringify({
       code,
