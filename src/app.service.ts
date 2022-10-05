@@ -36,7 +36,7 @@ export class AppService {
   }
 
   async sendConfirmationEmail(user: any) {
-    const { email, fullname } = await user;
+    const { email, fullname } = user;
     await this.mailerService.sendMail({
       to: email,
       subject: 'Welcome to Nice App! Confirm Email',
